@@ -1,0 +1,187 @@
+@import './const.scss';
+@import './flex.scss';
+@import './space.scss';
+
+@font-face {
+  font-family: DIN Alternate Bold;
+  src: url('/fonts/DIN Alternate Bold/DIN Alternate Bold.woff2') format('woff2'),
+    url('/fonts/DIN Alternate Bold/DIN Alternate Bold.woff') format('woff'),
+    url('/fonts/DIN Alternate Bold/DIN Alternate Bold.ttf') format('truetype'),
+    url('/fonts/DIN Alternate Bold/DIN Alternate Bold.eot')
+      format('embedded-opentype'),
+    url('/fonts/DIN Alternate Bold/DIN Alternate Bold.svg') format('svg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 14px;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', Arial !important;
+  font-synthesis: none;
+  height: 100vh;
+  line-height: 28px;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body#app {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+// 超链接
+a,
+.link {
+  font-size: inherit;
+  display: inline-block;
+  color: var(--color-primary-500);
+
+  &:hover {
+    color: var(--color-primary-500);
+  }
+}
+
+ul,
+li,
+input,
+textarea,
+button {
+  font-family: inherit !important;
+}
+
+#__nuxt,
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// 文本色
+.color {
+  &-red,
+  &-danger {
+    color: var(--color-danger);
+  }
+
+  &-orange,
+  &-warning {
+    color: var(--color-warning);
+  }
+
+  &-yellow {
+    color: #ecb601;
+  }
+
+  &-green,
+  &-success {
+    color: var(--color-success);
+  }
+
+  &-blue,
+  &-info {
+    color: var(--el-color-info);
+  }
+
+  &-cyan {
+    color: #11adb3;
+  }
+
+  &-gray {
+    color: #999;
+  }
+
+  &-dark {
+    color: #111;
+  }
+
+  &-white {
+    color: white;
+  }
+}
+
+// 字符修饰
+.text {
+  // 无修饰样式
+  &-normal {
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  // 粗体
+  &-bold {
+    font-weight: bold;
+  }
+
+  // 斜体
+  &-italic {
+    font-style: italic;
+  }
+
+  // 下划线
+  &-underline {
+    text-decoration: underline;
+  }
+
+  // 删除线
+  &-delete {
+    text-decoration: line-through;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+// 金额大写样式
+.money-rmb-value {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+
+  &-x {
+    width: 100%;
+  }
+  &-y {
+    height: 100%;
+  }
+}
+
+.overflow {
+  &-auto {
+    overflow: auto;
+  }
+  &-hide {
+    overflow: hidden;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

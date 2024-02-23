@@ -1,0 +1,45 @@
+$num: 0, 2, 5, 8, 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 100;
+
+@each $i in $num {
+  .m-#{$i} {
+    margin: $i * 1px;
+  }
+  .mt-#{$i},
+  .my-#{$i} {
+    margin-top: $i * 1px;
+  }
+  .mr-#{$i},
+  .mx-#{$i} {
+    margin-right: $i * 1px;
+  }
+  .mb-#{$i},
+  .my-#{$i} {
+    margin-bottom: $i * 1px;
+  }
+  .ml-#{$i},
+  .mx-#{$i} {
+    margin-left: $i * 1px;
+  }
+}
+
+@each $i in $num {
+  .p-#{$i} {
+    padding: $i * 1px;
+  }
+  .pt-#{$i},
+  .py-#{$i} {
+    padding-top: $i * 1px;
+  }
+  .pr-#{$i},
+  .px-#{$i} {
+    padding-right: $i * 1px;
+  }
+  .pb-#{$i},
+  .py-#{$i} {
+    padding-bottom: $i * 1px;
+  }
+  .pl-#{$i},
+  .px-#{$i} {
+    padding-left: $i * 1px;
+  }
+}
